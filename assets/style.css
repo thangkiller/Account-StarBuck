@@ -1,0 +1,72 @@
+body{
+	margin: 0;
+}
+.header{
+	height: 100px;
+	display: flex;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.085);
+	box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.08);
+}
+.logo{
+	width: 50px;
+	height: 50px;
+	margin: auto 0;
+	margin-left: 3%;
+}
+.body{
+
+}
+.form{
+	width: 36%;
+	margin: 65px auto;
+}
+.form--title{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	margin: 0;
+}
+.form__card{
+	margin-top: 50px;
+	border: 1px solid #000;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+}
+.form__card__item{
+	margin: 15px auto;
+	width: 80%;
+}
+.form__card>input{
+	display: block;
+	border-radius: 8px;
+}
+.form__card--nickname{
+	margin-top: 60px;
+	height: 50px;
+}
+.form__card--password{
+	height: 56px;
+}
+.form__card--keep{
+	cursor: pointer;
+}
+.form__card--keep>input{
+	cursor: pointer;
+}
+.more{
+
+}
+.footer{
+
+}
+.visit{
+
+}
+.infor{
+
+}
+.company{
+
+}
