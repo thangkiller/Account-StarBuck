@@ -13,9 +13,6 @@ body{
 	margin: auto 0;
 	margin-left: 3%;
 }
-.body{
-
-}
 .form{
 	width: 36%;
 	margin: 65px auto;
@@ -33,6 +30,7 @@ body{
 	border-radius: 8px;
 	display: flex;
 	flex-direction: column;
+	position: relative;
 }
 .form__card__item{
 	margin: 15px auto;
@@ -55,12 +53,18 @@ body{
 .form__card--keep>input{
 	cursor: pointer;
 }
-
+.form__card--keep>span:last-child{
+   color: #00754A;
+   font-weight: 700;
+   text-decoration: underline;
+}
 .form__card--forgot{
-
+   
 }
 .form__card--forgot>a{
 	display: block;
+	color: #00754A;
+   font-weight: 700;
 }
 .form__card--forgot>a:last-child{
 	margin-top: 10px;
@@ -72,6 +76,10 @@ body{
 	position: absolute;
 	right: 30px;
 	bottom: 40px;
+	border: 1px solid #00754A;
+	border-radius: 16px;
+	background-color: #00754A;
+	color: #fff;
 }
 
 
@@ -101,4 +109,23 @@ body{
 }
 .company{
 
+}
+
+
+
+
+
+@media screen and (max-width: 500px){
+   .form{
+      width: 90%;
+   }
+   .form__card{
+      height: 60vh;
+   }
+   .form__card--btn{
+      width: 60px;
+      height: 35px;
+      right: 10px;
+      bottom: 10px;
+   }
 }
