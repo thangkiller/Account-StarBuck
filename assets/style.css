@@ -77,9 +77,10 @@ body{
 	right: 30px;
 	bottom: 40px;
 	border: 1px solid #00754A;
-	border-radius: 16px;
+	border-radius: 32px;
 	background-color: #00754A;
 	color: #fff;
+	font-weight: 700;
 }
 
 
@@ -89,23 +90,58 @@ body{
 
 
 .more{
-
+   width: 90vw;
+   margin: auto;
+   border: 1px solid #fff;
+   border-radius: 16px;
+   background-color: rgba(0, 117, 74, .1);
+   text-align: center;
 }
-
-
-
-
-
-
-
+.more>h4{
+   color: #00754A;
+   
+}
+.more>p{
+   margin: 0 auto;
+   width: 95%;
+   font-size: 14px;
+}
+.more>button{
+   margin: 20px 0 15px 0;
+   width: 90px;
+   height: 40px;
+   border-radius: 32px;
+   color: rgba(0, 117, 74, 0.8);
+   font-weight: 700;
+   border: 1px solid rgba(0, 117, 74, 0.8);
+}
 .footer{
-
+   margin: 70px 0 30px 0;
+   padding-left: 30px;
+   border-top: 2px solid rgba(0, 0, 0, 0.085);
+	box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.08);
 }
 .visit{
+   padding-top: 25px;
+   margin-bottom: 30px;
+}
+.visit>a{
+   display: block;
+   width: 130px;
+   height: 40px;
+   box-sizing: border-box;
+   padding-top: 10px;
+   border: 1px solid #00754A;
+   border-radius: 32px;
+   color: #00754A;
+   text-align: center;
+   text-decoration: none;
+}
+.info{
 
 }
-.infor{
-
+.info>a{
+   display: block;
 }
 .company{
 
@@ -120,11 +156,13 @@ body{
       width: 90%;
    }
    .form__card{
-      height: 60vh;
+      border-style: none;
+      height: 57vh;
    }
    .form__card--btn{
-      width: 60px;
-      height: 35px;
+      width: 100px;
+      height: 50px;
+      font-size: 20px;
       right: 10px;
       bottom: 10px;
    }

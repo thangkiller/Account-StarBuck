@@ -1,10 +1,11 @@
 let keepN = document.querySelector('.form__card--keep');
-keepN.onclick = (e) => {
-   let keepList = [...keepN.children];
-   console.log(keepList);
-   switch(e.target) {
-      case keepList[1]: keepList[0].checked = !keepList[0].checked;
-                        break;
-      case keepList[2]: break;
-   }
-}
+let keepList = [...keepN.children];
+keepList.forEach( (keepbtnN, i) => {
+   keepbtnN.onclick = () => {
+      switch(i) {
+         case 1: keepList[0].checked = !keepList[0].checked;
+                           break;
+         case 2: break;
+      };
+   };
+});
