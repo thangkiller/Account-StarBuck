@@ -53,14 +53,15 @@ body{
 .form__card--keep>input{
 	cursor: pointer;
 }
-.form__card--keep>span:last-child{
-   color: #00754A;
+.form__card--keep>.decrip{
+   color: #00754A;      
    font-weight: 700;
    text-decoration: underline;
+   position: relative;
 }
-.form__card--forgot{
-   
-}
+
+
+
 .form__card--forgot>a{
 	display: block;
 	color: #00754A;
@@ -83,7 +84,28 @@ body{
 	font-weight: 700;
 }
 
-
+.decrip--more{
+   position: absolute;
+   bottom: -900px;
+   border: 1px solid #000;
+   color: #000;
+   font-weight: normal;
+   box-sizing: border-box;
+   padding: 10px;
+}
+.decrip--more::after{
+   content: "";
+   position: absolute;
+   top: 100%;
+   padding-bottom: 0;
+   background-image: linear-gradient(to right, red, yellow);
+   border-top: 20px solid #fff;
+   border-left: 10px solid transparent;
+   border-right: 10px solid transparent;
+   outline-color: #000;
+   outline-width: 1px;
+   outline-style: solid;
+}
 
 
 
@@ -94,7 +116,7 @@ body{
    margin: auto;
    border: 1px solid #fff;
    border-radius: 16px;
-   background-color: rgba(0, 117, 74, .1);
+   background-image: linear-gradient(to right, red, yellow);
    text-align: center;
 }
 .more>h4{
