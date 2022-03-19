@@ -53,14 +53,20 @@ body{
 .form__card--keep>input{
 	cursor: pointer;
 }
-.form__card--keep>.decrip{
+.decrip{
    color: #00754A;      
    font-weight: 700;
    text-decoration: underline;
    position: relative;
 }
 
-
+.decrip>div{
+   position: absolute;
+   bottom: 120%;
+   left: 50%;
+   margin-left: -50%;
+   border: 10px solid rgba(255, 255, 255, 0.9);
+}
 
 .form__card--forgot>a{
 	display: block;
@@ -85,22 +91,21 @@ body{
 }
 
 .decrip--more{
-   position: absolute;
-   bottom: -900px;
-   border: 1px solid #D0D0D0;
+   border: 1px solid #F4F4F4;
    border-radius: 16px;
    color: #000;
    font-weight: normal;
    box-sizing: border-box;
    padding: 10px;
-   background-color: #D0D0D0;
+   background-color: #F4F4F4;
 }
-.decrip--more::after{
+.decrip>div::after{
    content: "";
    position: absolute;
    top: 100%;
+   transform: translateX(50);
    padding-bottom: 0;
-   border-top: 20px solid #00CFFF3B;
+   border-top: 20px solid #F4F4F4;
    border-left: 10px solid transparent;
    border-right: 10px solid transparent;
 }
@@ -114,7 +119,7 @@ body{
    margin: auto;
    border: 1px solid #fff;
    border-radius: 16px;
-   background-image: linear-gradient(to right, red, yellow);
+   background-color: #00754A45;
    text-align: center;
 }
 .more>h4{
