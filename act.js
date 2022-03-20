@@ -9,9 +9,9 @@ let decrip = {
 }
 
 
-$$('.decrip').forEach( (decripN, i) =>
-   decripN.insertAdjacentHTML('beforeend', 
-      `<div class="decrip--more">
+$$('.decrip').forEach( (e, i) =>
+   e.insertAdjacentHTML('beforeend', 
+      `<div class="decrip--more disappear">
             ${Object.values(decrip)[i]}
             <button>got it</button>
       </div>`)
@@ -19,19 +19,14 @@ $$('.decrip').forEach( (decripN, i) =>
 
 
 
-let help = () => {
-   console.log(1)
-}
+let tooltip = (key) =>
+   $$('.decrip--more')[Object.keys(decrip).findIndex( cur => cur == key)].classList.toggle('disappear');
 
 
-let keepList = [...$('.form__card--keep').children];
-keepList.forEach( (keepbtnN, i) => {
-   keepbtnN.onclick = () => {
-      switch(i) {
-         case 1: keepList[0].checked = !keepList[0].checked;
-                           break;
-         case 2: help();
-                 break;
-      };
-   };
-});
+$('.form__card--keep>span').onclick = () =>
+   $('.form__card--keep>input').checked = !$('.form__card--keep>input').checked;
+
+$$('.decrip').forEach( (e, i) =>
+   e.onclick = () =>
+      tooltip( (i == 0) ? 'keepdetail' : 'forgotname')
+);

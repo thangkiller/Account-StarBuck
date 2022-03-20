@@ -1,6 +1,9 @@
 body{
 	margin: 0;
 }
+.disappear{
+   display: none;
+}
 .header{
 	height: 100px;
 	display: flex;
@@ -90,13 +93,13 @@ body{
    left: 50%;
    margin-left: -120px;
 	filter: drop-shadow(0px 0px 2px rgba(0,0,0, 0.34));
-   border: 1px solid #F4F4F4;
+   border:1px solid snow;
    border-radius: 16px;
    color: #000;
    font-weight: normal;
    box-sizing: border-box;
    padding: 20px 20px 60px 20px;
-   background-color: #F4F4F4;
+   background-color: snow;
 }
 .decrip--more::before{
    content: "";
@@ -104,7 +107,7 @@ body{
    top: 100%;
    left: 40%;
    padding-bottom: 0;
-   border-top: 20px solid #F4F4F4;
+   border-top: 20px solid snow;
    border-left: 10px solid transparent;
    border-right: 10px solid transparent;
 }
@@ -113,7 +116,7 @@ body{
    bottom: 15px;
    right: 15px;
    border-style: none;
-   background-color: #f4f4f4;
+   background-color: snow;
    color: #00754A;
    font-size: 18px;
    font-weight: 700;
