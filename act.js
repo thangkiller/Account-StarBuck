@@ -11,11 +11,9 @@ let decrip = {
 
 $$('.decrip').forEach( (decripN, i) =>
    decripN.insertAdjacentHTML('beforeend', 
-      `<div>
-         <div class="decrip--more">
+      `<div class="decrip--more">
             ${Object.values(decrip)[i]}
             <button>got it</button>
-         </div>
       </div>`)
 );
 

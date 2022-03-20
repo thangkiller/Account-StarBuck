@@ -60,15 +60,6 @@ body{
    position: relative;
 }
 
-.decrip>div{
-   width: 400%;
-   position: absolute;
-   bottom: 120%;
-   left: 50%;
-   margin-left: -200%;
-   border: 10px solid rgba(255, 255, 255, 0.9);
-   filter: drop-shadow(0px 1px 10px 0px rgba(0, 0, 0, 0.08));
-}
 
 .form__card--forgot>a{
 	display: block;
@@ -93,16 +84,21 @@ body{
 }
 
 .decrip--more{
+   width: 240px;
+   position: absolute;
+   bottom: 180%;
+   left: 50%;
+   margin-left: -120px;
 	filter: drop-shadow(0px 0px 2px rgba(0,0,0, 0.34));
    border: 1px solid #F4F4F4;
    border-radius: 16px;
    color: #000;
    font-weight: normal;
    box-sizing: border-box;
-   padding: 10px;
+   padding: 20px 20px 60px 20px;
    background-color: #F4F4F4;
 }
-.decrip>div::before{
+.decrip--more::before{
    content: "";
    position: absolute;
    top: 100%;
@@ -112,7 +108,16 @@ body{
    border-left: 10px solid transparent;
    border-right: 10px solid transparent;
 }
-
+.decrip--more>button{
+   position: absolute;
+   bottom: 15px;
+   right: 15px;
+   border-style: none;
+   background-color: #f4f4f4;
+   color: #00754A;
+   font-size: 18px;
+   font-weight: 700;
+}
 
 
 
@@ -196,11 +201,32 @@ body{
 	  right: 10px;
 	  bottom: 10px;
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	.more{
 		width: 90vw;
 	}
-
-	  
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+	
 
 	.footer{
 	   padding-left: 30px;
